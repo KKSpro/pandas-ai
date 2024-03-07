@@ -4,7 +4,7 @@ from .base import BasePrompt
 class GeneratePythonCodePrompt(BasePrompt):
     """Prompt to generate Python code from a dataframe."""
 
-    template_path = "./templates/generate_python_code.tmpl"
+    template_path = "generate_python_code.tmpl"
 
     def to_json(self):
         context = self.props["context"]
